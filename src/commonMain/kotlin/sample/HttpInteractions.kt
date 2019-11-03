@@ -1,6 +1,7 @@
 package sample
 
 import io.ktor.client.request.get
+import io.ktor.client.request.post
 import kotlinx.serialization.Serializable
 
 val myHttp by lazy { CommonHttpClient() }
