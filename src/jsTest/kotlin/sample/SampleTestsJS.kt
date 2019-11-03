@@ -13,9 +13,9 @@ class SampleTestsJS {
     }
 
     @Test
-    fun retrieveString() {
+    fun retrieveStr() {
         CoroutineScope(Dispatchers.Default).promise {
-            val zenExample = retrieveData()
+            val zenExample = retrieveString()
             println("Retrieved string is $zenExample")
         }
     }

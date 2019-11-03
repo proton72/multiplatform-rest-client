@@ -13,7 +13,14 @@ class SampleTestsJVM {
     @Test
     fun testApi() {
         runBlocking {
-            println(retrieveData())
+            println(retrieveString())
+        }
+    }
+
+    @Test
+    fun testApiSerialization() {
+        runBlocking {
+            println(retrieveJsonData())
         }
     }
 }
