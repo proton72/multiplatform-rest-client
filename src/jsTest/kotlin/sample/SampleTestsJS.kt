@@ -15,8 +15,18 @@ class SampleTestsJS {
     @Test
     fun retrieveStr() {
         CoroutineScope(Dispatchers.Default).promise {
-            val zenExample = retrieveString()
-            println("Retrieved string is $zenExample")
+            retrieveString()
         }
+            .then { println("Retrieved string is $it") }
+            .catch { println("Something went wrong $it") }
+    }
+
+    @Test
+    fun retrieveJson() {
+        CoroutineScope(Dispatchers.Default).promise {
+            retrieveJsonData()
+        }
+            .then { println("Retrieved data is $it") }
+            .catch { println("Something went wrong $it") }
     }
 }
