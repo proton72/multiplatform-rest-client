@@ -4,8 +4,8 @@ plugins {
 repositories {
     mavenCentral()
 }
-group 'com.example'
-version '0.0.1'
+group 'ru.proton72'
+version '0.0.1-SNAPSHOT'
 
 apply plugin: 'maven-publish'
 
@@ -13,8 +13,6 @@ kotlin {
     jvm()
     js {
         browser {
-        }
-        nodejs {
         }
     }
     // For ARM, should be changed to iosArm32 or iosArm64

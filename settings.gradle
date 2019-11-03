@@ -1,4 +1,3 @@
-rootProject.name = 'rest-client-universal'
-
+rootProject.name = 'multiplatform-rest-client'
 
 enableFeaturePreview('GRADLE_METADATA')
