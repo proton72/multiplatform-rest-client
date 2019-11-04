@@ -56,11 +56,10 @@ kotlin {
         jsMain {
             dependencies {
                 implementation kotlin('stdlib-js')
-                implementation "io.ktor:ktor-client-js:$ktorVersion"
-                implementation "io.ktor:ktor-client-serialization-js:$ktorVersion"
+                api("io.ktor:ktor-client-js:$ktorVersion")
+                api "io.ktor:ktor-client-json-js:$ktorVersion"
+                api "io.ktor:ktor-client-serialization-js:$ktorVersion"
                 implementation(npm("text-encoding", "0.7.0")) // to fix ktor-client-js error
-                implementation(npm("utf-8-validate", "v5.0.2")) // to fix ktor-client-js error
-                implementation(npm("bufferutil", "v4.0.1")) // to fix ktor-client-js error
             }
         }
         jsTest {
